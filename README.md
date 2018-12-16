@@ -1,2 +1,1 @@
-# schwag_exchange
-Schwag Exchange
+# Schwag Exchange
