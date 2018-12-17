@@ -37,14 +37,19 @@ func index(out io.Writer) {
           background-size: cover;
         }
         </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131145973-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-131145973-1');
+        </script>
         <title>Swag Exchange</title>
         </head>
         <body>
-
         <div class="bg"></div>
-
         <!-- Follow the progress of Schwag Exchange at https://github.com/betandr/schwag_exchange -->
-
         </body>
         </html>`
 
