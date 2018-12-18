@@ -44,6 +44,8 @@ func index(out io.Writer) {
 		  text-align: center;
 		}
 	    </style>
+		<link rel="shortcut icon" href="https://storage.googleapis.com/images.schwag.exchange/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="https://storage.googleapis.com/images.schwag.exchange/favicon.ico" type="image/x-icon">
 	    <!-- Global site tag (gtag.js) - Google Analytics -->
 	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131145973-1"></script>
 	    <script>
@@ -62,7 +64,7 @@ func index(out io.Writer) {
 
 		<div class="footer">
 		  <p>"<a href="https://github.com/betandr/schwag_exchange">Schwag Exchange</a>"
-		  is a reference Go/Kubernetes/Istio application.</p>
+		  is a reference Go/Kubernetes/Istio application by <a href="https://bet.andr.io/about/">Beth Anderson</a>.</p>
 		</div>
 	    </body>
 	    </html>`
