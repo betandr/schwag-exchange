@@ -54,7 +54,7 @@ func index(out io.Writer) {
 	        gtag('js', new Date());
 	        gtag('config', 'UA-131145973-1');
 	    </script>
-	    <title>Swag Exchange</title>
+	    <title>Schwag Exchange</title>
 	    </head>
 	    <body>
 	    <!--  -->
