@@ -20,38 +20,52 @@ func main() {
 
 func index(out io.Writer) {
 	templ := `<!DOCTYPE html>
-        <html>
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        body, html {
-          height: 100%;
-          margin: 0;
-        }
+	    <html>
+	    <head>
+	    <style>
+		a {
+		  color: white;
+		}
+	    .centered {
+	      position: fixed;
+	      top: 50%;
+	      left: 50%;
+	      margin-top: -150px;
+	      margin-left: -111px;
+	    }
+		.footer {
+		  position: fixed;
+		  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  background-color: #3367d6;
+		  color: white;
+		  text-align: center;
+		}
+	    </style>
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131145973-1"></script>
+	    <script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
+	        gtag('config', 'UA-131145973-1');
+	    </script>
+	    <title>Swag Exchange</title>
+	    </head>
+	    <body>
+	    <!--  -->
+	    <!-- Follow the progress at  -->
 
-        .bg {
-          background-image: url("https://storage.googleapis.com/images.schwag.exchange/coming_soon.jpg");
-          height: 100%;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        </style>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131145973-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-131145973-1');
-        </script>
-        <title>Swag Exchange</title>
-        </head>
-        <body>
-        <div class="bg"></div>
-        <!-- Follow the progress of Schwag Exchange at https://github.com/betandr/schwag_exchange -->
-        </body>
-        </html>`
+	    <img class="centered" src="https://storage.googleapis.com/images.schwag.exchange/schwaggy.png" alt="Schwaggy the Hamster" />
+
+		<div class="footer">
+		  <p>"<a href="https://github.com/betandr/schwag_exchange">Schwag Exchange</a>"
+		  is a reference Go/Kubernetes/Istio application.</p>
+		</div>
+	    </body>
+	    </html>`
 
 	var issueList = template.Must(template.New("swag").Parse(templ))
 
