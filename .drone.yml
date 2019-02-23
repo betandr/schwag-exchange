@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: frontend
+  image: golang
+  commands:
+  - go test
